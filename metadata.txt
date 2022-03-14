@@ -1,0 +1,25 @@
+Date: 2022-03-11
+Time: 10:49:28
+filename: data.tif
+description: what are you doing?
+delay_s: 0
+channels_per_slice: ['488', '561', '640']
+power_per_channel: [50, 75, 100]
+filter_wheel_position: 6
+illumination_time_us: 5000.0
+height_px: 500
+width_px: 500
+timestamp_mode: binary+ASCII
+scan_step_size_px: 3
+scan_step_size_um: 0.4019223898963579
+slices_per_volume: 134
+scan_range_um: 53.4556778562156
+volumes_per_buffer: 2
+focus_piezo_z_um: 33.0
+XY_stage_position_mm: (-1.8403, -4.5484)
+preview_line_px: 10
+MRR: 1.400560224089636
+Mtot: 56.02240896358544
+tilt: 0.5235987755982988
+sample_px_um: 0.11602499999999999
+voxel_aspect_ratio: 1.7320508075688772
