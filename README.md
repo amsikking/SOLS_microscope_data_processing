@@ -7,6 +7,9 @@ An example of how to process SOLS microscope data into more conventional formats
 - Run 'sols_microscope_data_processing.py' to see the conversion of data from **'raw' -> 'preview' -> 'native' -> 'traditional'**.
 
 Note: the critical **_metadata parameters_** needed to correctly process the data are preset in this example (scan_step_size_px, preview_line_px, timestamp_mode and voxel_aspect_ratio). However, they should normally be collected from the associated metadata file produced by the microscope (example included here -> 'metadata.txt').
+
+![social_preview](https://github.com/amsikking/SOLS_microscope_data_processing/blob/main/social_preview.png)
+
 ## Details:
 - 'data.tif' is a 5D acquisition of a fluorescent sphere etched in glass (for reference see the included datasheet 'pattern G' or https://argolight.com/). This concrete example has 2 volumes, 134 slices, 3 colors, 500 height pixels and 500 width pixels.
 - If you're new to SOLS data a sphere is a good first example to visualize the various processing steps (i.e. it's 3D with an unambiguous shape).
