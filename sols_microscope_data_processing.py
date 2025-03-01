@@ -18,23 +18,22 @@ def view_in_napari(data_preview,
                    voxel_aspect_ratio=None, # Needed for data_native
                    data_traditional=None):
     print('\nViewing in napari')
-    with napari.gui_qt():
-        preview = napari.Viewer()
-        preview.add_image(data_preview, name='data_preview')
-        if data_preview_roi is not None:
-            preview_roi = napari.Viewer()
-            preview_roi.add_image(data_preview_roi, name='data_preview_roi')
-        if data_native is not None:
-            native = napari.Viewer()
-            for channel in range(data_native.shape[2]):
-                native.add_image(data_native[:, :, channel, :, :],
-                                 name='data_native',
-                                 scale=(1, voxel_aspect_ratio, 1, 1))
-        if data_traditional is not None: 
-            traditional = napari.Viewer()
-            for channel in range(data_traditional.shape[2]):
-                traditional.add_image(data_traditional[:, :, channel, :, :],
-                                      name='data_traditional')
+    preview = napari.Viewer()
+    preview.add_image(data_preview, name='data_preview')
+    if data_preview_roi is not None:
+        preview_roi = napari.Viewer()
+        preview_roi.add_image(data_preview_roi, name='data_preview_roi')
+    if data_native is not None:
+        native = napari.Viewer()
+        for channel in range(data_native.shape[2]):
+            native.add_image(data_native[:, :, channel, :, :],
+                             name='data_native',
+                             scale=(1, voxel_aspect_ratio, 1, 1))
+    if data_traditional is not None: 
+        traditional = napari.Viewer()
+        for channel in range(data_traditional.shape[2]):
+            traditional.add_image(data_traditional[:, :, channel, :, :],
+                                  name='data_traditional')
 
 # Get processsing tools:
 datapreview     = DataPreview()
