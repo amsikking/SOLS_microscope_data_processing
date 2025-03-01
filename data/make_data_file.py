@@ -20,6 +20,6 @@ for i in range(20):
 
 data = np.concatenate(data, axis=4)
 print('\nCombined data in single file, shape = %s'%str(data.shape))
-print('-> saving: ..\data.tif')
-imwrite('..\data.tif', data)
+print('-> saving: ..\\data.tif')
+imwrite('..\\data.tif', data)
 print('-> done!')
